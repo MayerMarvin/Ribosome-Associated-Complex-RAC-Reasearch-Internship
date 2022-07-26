@@ -6,7 +6,7 @@ Topic of the research intership is the analysis of the ribosome associated compl
 ### Cytosin Metagene Analysis
 One hypothesis put forward by Koji Ishikawa is that RAC binds to hydrophobic amino acids around the first cysteine in the amino acid sequence. For this purpose, the script [aa_distr_first_cys.py](https://github.com/MayerMarvin/Ribosome-Associated-Complex-RAC-Reasearch-Internship/blob/4937c5910a7763a01b1b363998778b2297e4d139/Cytosine%20Metagene%20Analysis/aa_distr_first_cys.py) was created to determine the amino acids located around the first cysteine. Then, only the amino acids that are significantly increased are displayed. This is determined by comparing the abundance of the amino acid at this relative position to the first cysteine, with the normal distribution of the amino acid in the yeast proteome. Significantly elevated amino acids are then output in color coding, with positively charged amino acids in orange, negatively charged amino acids in yellow, polar and uncharged amino acids in red, special case amino acids in green, and hydrophobic amino acids in blue. 
 
-
+![50_window_first_cys](https://github.com/MayerMarvin/Ribosome-Associated-Complex-RAC-Reasearch-Internship/blob/e38bca87ff728864db8b2690e785ccd5b61b6ade/Cytosine%20Metagene%20Analysis/50_window_first_cys.png)
 
 ### Bioinformatic Analysis of Selective Ribosome Profiling (SeRP)
 
