@@ -1,4 +1,5 @@
-# Research internship at Bukau lab at the University in Heidelberg
+# BPC Research internship 
+Internship from 13.06.2022 - 29.07.2022 at Bukau lab at the University in Heidelberg
 Supervisor Koji Ishikawa
 
 Topic of the research intership is the analysis of the ribosome associated complex (RAC) which consits of Zuotin and Ssz1 binding to the ribosome. It is responsible for binding the emerging nascant chain and for the handover of the nascant chain towards Ssb chaperones.
@@ -10,4 +11,18 @@ One hypothesis put forward by Koji Ishikawa is that RAC binds to hydrophobic ami
 
 ### Bioinformatic Analysis of Selective Ribosome Profiling (SeRP)
 
-bla bla iwelche infos
+For the analysis of the SeRP data, a customized pipeline by Koji Ishikawa was used. This pipeline runs the data analysis and quality assessment of Ribosome Profiling Data. It analyzes short unpaired raw reads requiring fastq files as input and runs following analysis:
+
+  1. Trimming of 3' adapter with Cutadapt (v.1.13)
+
+  2. Umis isolation with custom Julia script (by Ilia)
+
+  3. rRNA sequences removal with Bowtie2 (v.2.3.5.1)
+
+  4. Alignment of reads using STAR (on the Nextseq computer, v2.7.1a)
+
+  5. Quality check with Fastqc (v.0.11.5)
+
+  6. Reads assignemnt (5') with custom Julia script (by Ilia), including umi-collapsed assignment and the read length correction of soft-clipped reads with "Non-templated Nt additions" (updated version from 10th of Oct 2019)
+  
+  The produced results can be viewed in the XYZ folder
